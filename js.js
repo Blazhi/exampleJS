@@ -284,14 +284,14 @@
 
 // console.log(cost); // 100
 
-const friends = [
-    {name:'Mango', online: false},
-    {name:'Kiwi', online: true},
-    {name:'Poly', online: true},
-    {name:'Ajax', online: false},
-];
+// const friends = [
+//     {name:'Mango', online: false},
+//     {name:'Kiwi', online: true},
+//     {name:'Poly', online: true},
+//     {name:'Ajax', online: false},
+// ];
 
-console.table(friends);
+// console.table(friends);
 
 // for (const friend of friends){
 //     console.log(friend.name)
@@ -348,19 +348,123 @@ console.table(friends);
 
 ////////////////////////////////////////////////////////////////////////////
 
-const getOfflineFriends = function(allFriends){
+// const getOfflineFriends = function(allFriends){
   
-    const offlineFriends = [];
+//     const offlineFriends = [];
   
-    for (const friend of allFriends){
-        console.log(friend);
-        console.log(friend.online);
+//     for (const friend of allFriends){
+//         console.log(friend);
+//         console.log(friend.online);
     
 
-    if (!friend.online){
-       offlineFriends.push(friend)
-    }
+//     if (!friend.online){
+//        offlineFriends.push(friend)
+//     }
 
-    return offlineFriends;
-}}
-console.log(getOfflineFriends(friends));
+//     return offlineFriends;
+// }}
+// console.log(getOfflineFriends(friends));
+
+/////////////////////////////////////////////
+
+// const user = {
+//     name:'Mango',
+//     age: 20,
+//     hobby: 'html',
+//     premium: true,
+// };
+
+// user.mood = 'happy';
+
+// user.hobby = 'skydiving';
+
+// user.premium = false;
+// перебрали массив и консоле подставили значение
+
+// const keys = Object.keys(user);
+
+// for (const key of keys){
+//     console.log(`${key}: ${user[key]}`);
+// }
+// второй вариант решения при помощи Object.entries
+
+// for (const item of Object.entries(user)){
+//     console.log(`${item[0]}: ${item[1]}`)
+// }
+
+// console.log(user)
+
+///////////////////////////////////////////////////////
+
+// for ... in использование на примере
+
+// const animal = {
+//     legs: 4,
+// };
+
+// const dog = Object.create(animal);
+// dog.name = 'Mango';
+
+// all keys
+
+// for (const key in dog){
+// console.log(key);
+// }
+
+
+// only own keys
+
+// for (const key of Object.keys(dog)){
+//     console.log(key);
+// }
+
+////////////////////////////////////////////////////////////////////
+
+// function getSalariesSum(salaries = {}){
+// let sum = 0;
+
+//     for (const salary of Object.values(salaries)){
+//        sum += salary
+//     }
+//     return sum;
+// }
+
+// console.log(
+//     getSalariesSum({
+//         John: 100,
+//         Ann: 160,
+//         Pete:130,
+//     })
+// )
+
+// console.log(getSalariesSum({}))
+
+////////////////////////////////////////////////////////////////////////
+
+function calcTotalPrice (stones, stoneName){
+    let totalPrice = 0;
+
+
+for (const item of stones){
+    const name = item.name;
+    const price = item.price;
+    const quantity = item.quantity;
+
+    if (name === stoneName){
+        totalPrice = price * quantity;
+    }
+}
+
+return totalPrice;
+}
+
+const stones = [
+    { name: 'Изумруд',price: 1300, quantity: 4},
+    { name: 'Брилллиант',price: 2700, quantity: 3},
+    { name: 'Сапфир',price: 400, quantity: 7},
+    { name: 'Щебень',price: 200, quantity: 2},
+];
+
+console.log(calcTotalPrice(stones, 'Щебень'));
+console.log(calcTotalPrice(stones, 'Изумруд'))
+
