@@ -441,30 +441,55 @@
 
 ////////////////////////////////////////////////////////////////////////
 
-function calcTotalPrice (stones, stoneName){
-    let totalPrice = 0;
+// function calcTotalPrice (stones, stoneName){
+//     // let totalPrice = 0;
 
 
-for (const item of stones){
-    const name = item.name;
-    const price = item.price;
-    const quantity = item.quantity;
+// for (const item of stones){
 
-    if (name === stoneName){
-        totalPrice = price * quantity;
+//     // const name = item.name;
+//     // const price = item.price;
+//     // const quantity = item.quantity;
+
+
+
+//     if (item.name === stoneName){
+//         return item.price * item.quantity;
+//     }
+// }
+
+//     return 0;
+// }
+
+// const stones = [
+//     { name: 'Изумруд',price: 1300, quantity: 4},
+//     { name: 'Брилллиант',price: 2700, quantity: 3},
+//     { name: 'Сапфир',price: 400, quantity: 7},
+//     { name: 'Щебень',price: 200, quantity: 2},
+// ];
+
+// console.log(calcTotalPrice(stones, 'Щебень'));
+// console.log(calcTotalPrice(stones, 'Изумруд'));
+
+/////////////////////////////////////////////////////////////////////////////////
+
+////Задача "Найди число"
+
+const x = Math.floor(Math.random() * 100) +1;
+
+let userInput;
+
+do {
+    userInput = Number(prompt('Enter your number'));
+
+    if (userInput>x){
+        console.log(`${userInput} > x`)
     }
-}
 
-return totalPrice;
-}
+    
+    if (userInput<x){
+        console.log(`${userInput} < x`)
+    }
+} while (userInput !== x);
 
-const stones = [
-    { name: 'Изумруд',price: 1300, quantity: 4},
-    { name: 'Брилллиант',price: 2700, quantity: 3},
-    { name: 'Сапфир',price: 400, quantity: 7},
-    { name: 'Щебень',price: 200, quantity: 2},
-];
-
-console.log(calcTotalPrice(stones, 'Щебень'));
-console.log(calcTotalPrice(stones, 'Изумруд'))
-
+console.log('число найдено')
