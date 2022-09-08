@@ -475,21 +475,83 @@
 
 ////Задача "Найди число"
 
-const x = Math.floor(Math.random() * 100) +1;
+// const x = Math.floor(Math.random() * 100) +1;
 
-let userInput;
+// let userInput;
 
-do {
-    userInput = Number(prompt('Enter your number'));
+// do {
+//     userInput = Number(prompt('Enter your number'));
 
-    if (userInput>x){
-        console.log(`${userInput} > x`)
-    }
+//     if (userInput>x){
+//         console.log(`${userInput} > x`)
+//     }
 
     
-    if (userInput<x){
-        console.log(`${userInput} < x`)
-    }
-} while (userInput !== x);
+//     if (userInput<x){
+//         console.log(`${userInput} < x`)
+//     }
+// } while (userInput !== x);
 
-console.log('число найдено')
+// console.log('число найдено')
+
+//////////////////////////////////////////////////
+
+// const numbers = [2,45,31,3,9,1];
+
+// let smallestNumber = numbers[0];
+
+// for (const number of numbers){
+//     if (number < smallestNumber){
+//         smallestNumber = number;
+//     }
+// }
+// console.log(smallestNumber)
+
+// console.log(smallestNumber)
+
+/////////////////////////////////////////////////////////////////
+
+// const clients = ["Mango", "Ajax", "Poly"];
+// console.table(clients);
+
+// // for (const client of clients){
+// //     console.log(client);
+// // }
+
+// for (let i=0; i < clients.length; i += 1){
+//     console.log(clients[i]);
+// }
+/////////////////////////////////////////////////////////////////////
+
+//   const cart = [54, 29, 105, 70, 92, 17, 120];
+//     let total = 0;
+
+// //   for (let i=0; i < cart.length; i += 1){
+// //     console.log(cart[i]);
+
+// //     total += cart[i];
+    
+// //   };
+
+//   for (const value of cart){
+//     total += value;
+//   }
+//   console.log('Total:',total);
+
+//////////////////////////////////////////////////////////////////////////
+// сумма всех четных чисел
+
+const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11 ];
+let total = 0;
+
+for (const number of numbers){
+    // console.log(number);
+
+    if (number % 2 === 0){
+        console.log(`${number} - Chetnoe`);
+
+        total+=number;
+    } else console.log(`${number} - Ne chetnoe!`)
+}
+
+console.log('Total:',total);
