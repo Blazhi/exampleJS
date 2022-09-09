@@ -541,17 +541,138 @@
 //////////////////////////////////////////////////////////////////////////
 // сумма всех четных чисел
 
-const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11 ];
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11 ];
+// let total = 0;
+
+// for (const number of numbers){
+//     // console.log(number);
+
+//     if (number % 2 === 0){
+//         console.log(`${number} - Chetnoe`);
+
+//         total+=number;
+//     } else console.log(`${number} - Ne chetnoe!`)
+// }
+
+// console.log('Total:',total);
+////////////////////////////////////////////////////////////////////////////////////
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3mn']
+// const loginToFind = 'poly1scute';
+
+// // for (const login of logins){
+// //     if (login === loginToFind){
+// //         console.log(`${login} - to find`)
+// //     }
+// // }
+
+// const message =  logins.includes(loginToFind) 
+// ? `${loginToFind} to find` 
+// : 'not find';
+
+// console.log(message)
+ /////////////////////////////////////////////////////////////////////
+
+//  const numbers = [51, 18, 13, 24, 7, 85, 19];
+
+//  let smallestNumber = numbers[0];
+
+// for (const number of numbers){
+//     if (number < smallestNumber){
+//         mallestNumber === number 
+//     }
+// }
+// console.log (smallestNumber)
+
+//////////////////////////////////////////////
+
+// const friends = [ 'Mango', 'Poly', 'Kiwi', 'Ajax']
+
+// const friendJoin = friends.join(",");
+
+// console.log (friendJoin)
+
+///////////////////////////////////////////////////
+
+// const string = 'JavaScript';
+
+// const letters = string.split('');
+
+// let invertedString = '';
+
+// console.log(letters);
+
+// for (const letter of letters){
+// console.log(letter);
+
+////// first variant
+
+// if (letter === letter.toLowerCase()) {
+//    console.log('эта буква в нижнем р(letter === letter.toLowerCase())егистре -', letter);
+
+//    invertedString += letter.toUpperCase();
+
+// } else {
+//     console.log('эта буква в верхнем регистре -', letter);
+//      invertedString+= letter.toLowerCase()
+// }
+
+/// second variant
+
+// invertedString +=
+// letter === letter.toLowerCase()
+// ?  invertedString += letter.toUpperCase()
+// : invertedString+= letter.toLowerCase();
+// }
+// console.log(invertedString)
+
+////////////////////////////////////////////////////////////////
+
+// const tittle = 'Top 10 benefits of React fraemwork';
+
+// const words = tittle.toLowerCase();
+
+// const normTittle = words.split(' ')
+
+// const slug = normTittle.join("-")
+
+// console.log(slug)
+
+//////////////////////////////
+
+const array1 = [5, 10, 15, 20];
+const array2 = [10, 20, 30];
+
 let total = 0;
 
-for (const number of numbers){
-    // console.log(number);
+// for (const number of array1){
+//     total +=number;
+// };
 
-    if (number % 2 === 0){
-        console.log(`${number} - Chetnoe`);
+// for (const value of array2){
+//     total += value;
+// };
 
-        total+=number;
-    } else console.log(`${number} - Ne chetnoe!`)
+const allArray = array1.concat(array2);
+
+for (const value of allArray){
+    total += value;
 }
+console.log(total)
 
-console.log('Total:',total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
