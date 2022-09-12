@@ -1,3 +1,139 @@
+
+//////////////// lesson one go it 
+// Example 1 - Математические операторы
+// Выведи на экран общее количество яблок и винограда. Разницу яблок и винограда.
+// const apples = 47;
+// const grapes = 135;
+// const total = apples + grapes ;
+// console.log(total)
+// const diff = apples - grapes;
+// console.log(diff)
+/////////////////////////////////
+// Example 2 - Комбинированные операторы
+// Замени выражение переопределения комбинированным оператором +=.
+
+// let students = 100;
+// students +=  50;
+// console.log(students);
+
+/////////////////////////////////
+// Example 3 - Приоритет операторов
+// Разбери приоритет операторов в инструкции присвоения значения переменной result.
+// const result = 108 + 223 - 2 * 5;
+
+// console.log(result);
+
+//////////////////////////////////
+// Example 5 - Шаблонные строки
+// Составь фразу с помощью шаблонных строк A has B bots in stock, где A, B - переменные вставленные в строку.
+// const companyName = 'Cyberdyne Systems';
+// const repairBots = 150;
+// const defenceBots = 50;
+// const message = `${companyName} has ${repairBots + defenceBots} bots in stock`;
+// console.log(message); // "Cyberdyne Systems has 200 bots in stock"
+
+//////////////////////////////////
+// Example 6 - Методы строк и чейнинг
+// Напиши скрипт который рассчитывает индекс массы тела человека. 
+// Для этого необходимо разделить вес в киллограммах на квадрат высоты человека в метрах.
+
+// Вес и высота хранятся в переменных weight и height, но не как числа, а в виде строк (специально для задачи).
+// Нецелые числа могут быть заданы в виде 24.7 или 24,7, то 
+// есть в качестве разделителя дробной части может быть запятая.
+
+// Индекс массиы тела необходимо округлить до одной цифры после запятой;
+
+// let weight = "88,3";
+// let height = "1.75";
+
+// const bmi = weight / Math.pow(height, 2);
+// console.log(bmi); // 28.8
+
+//////////////////////////////////////
+
+
+// const a = 120;
+// const b = 180;
+
+// const biggestNum = a > b ? a : b ;
+// console.log(biggestNum)
+///////////////////////////////////////////
+
+// let link = 'https://my-site.com/about';
+// const endLink = link.endsWith('/');
+
+// if (endLink === false) {
+//     console.log(link +"/")
+// }
+
+/////////////////////////////////////////////////
+
+// let link = 'https://my-site.com/about';
+// const endLink = link.endsWith('/');
+
+// if (endLink === false) {
+//     if (link.includes("my-site") === true){
+//         console.log(link +"/")
+//     }
+// } else {
+//     console.log(`В ${link} нет "my-site"`)
+// }
+
+/////////////////////////////////////////////////
+
+// let link = 'https://somesite.com/about';
+// // if (link.includes('my-site') && !link.endsWith('/')) {
+// //   link += '/';
+// // }
+// link.includes('my-site') && !link.endsWith('/') ? link += '/' : link
+// console.log(link);
+
+/////////////////////////////////////////////////
+// const hours = 30;
+// let message = ``;
+
+// if(hours < 17){
+//  message = `Pending`;
+// } else if ( hours >=17 && hours <= 24 ){
+//     message = `Expires`
+// } else if (hours > 24){
+//     message = `Overdue`
+// }
+// console.log(message)
+
+/////////////////////////////////////////////////////
+// сли до дедлайна 0 дней - выведи строку "Сегодня"
+// Eсли до дедлайна 1 день - выведи строку "Завтра"
+// Eсли до дедлайна 2 дня - выведи строку "Послезавтра"
+// Eсли до дедлайна 3+ дней - выведи строку "Дата в будущем"
+
+
+// const  daysUntilDeadline = 5;
+// let message = ``;
+
+
+// if ( daysUntilDeadline === 0){
+//  message = `Сегодня`
+// } else if (daysUntilDeadline === 1){
+//     message = `Завтра`
+// } else if (daysUntilDeadline === 2){
+//     message = `Послезавтра`
+// } else if (daysUntilDeadline >= 3){
+//     message = `Дата в будущем`
+// }
+// console.log(message)
+//////////////////////////////////////////////
+
+const max = 100;
+const min = 20;
+
+for (let i = min;i = max; i+=5){
+console.log(i)
+}
+
+
+////////////////////////////////////////////////
+
 // const numbers = [2,45,31,3,9,1];
 // let smallestNumber = numbers[0];
 // for (const number of numbers){
@@ -571,6 +707,29 @@
 
 // console.log(message)
  /////////////////////////////////////////////////////////////////////
+//  const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3mn']
+
+//  const findLogin = function( allLogins,loginToFind){
+
+
+//     for (const login of allLogins){
+//     if (login === loginToFind){
+
+//         return `${loginToFind} - to find`;
+
+//     } 
+// }
+//         return `${loginToFind} - not to find`;
+// //  }
+// return allLogins.includes(loginToFind)
+// ? `${loginToFind} - to find`
+// : `${loginToFind} - not to find`
+
+//  }
+
+// console.log(findLogin(logins, 'avocod3r'));
+// console.log(findLogin(logins, 'poly1scute'));
+ ///////////////////////////////////////
 
 //  const numbers = [51, 18, 13, 24, 7, 85, 19];
 
@@ -582,6 +741,23 @@
 //     }
 // }
 // console.log (smallestNumber)
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const calcTotalPrice = function (items){
+//     console.log(items);
+    
+//     let total = 0;
+
+//     for (const item of items){
+//         total += item
+//     }
+//     return total;
+// };
+
+// console.log(calcTotalPrice([1, 2, 3]));
+// console.log(calcTotalPrice([5,10,15,20]));
+// console.log(calcTotalPrice([100,200,300]));
 
 //////////////////////////////////////////////
 
@@ -625,6 +801,32 @@
 // }
 // console.log(invertedString)
 
+///////////////////////////////////////////////////////////////
+//// function 
+
+// const changeCase = function(string){
+//     const letters = string.split('');
+//     let invertedString = '';
+//     console.log(letters);
+
+//     for (const letter of letters){
+//     const isInLowerCase = letter === letter.toLowerCase();
+
+//     invertedString += isInLowerCase
+//     ? letter.toUpperCase()
+//     : letter.toLowerCase();
+//     }
+
+//     return invertedString
+// }
+
+// console.log(changeCase('qweRTY'));
+// console.log(changeCase('mAnGo'));
+
+
+
+
+
 ////////////////////////////////////////////////////////////////
 
 // const tittle = 'Top 10 benefits of React fraemwork';
@@ -639,10 +841,12 @@
 
 //////////////////////////////
 
-const array1 = [5, 10, 15, 20];
-const array2 = [10, 20, 30];
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
 
-let total = 0;
+// let total = 0;
+
+
 
 // for (const number of array1){
 //     total +=number;
@@ -652,27 +856,338 @@ let total = 0;
 //     total += value;
 // };
 
-const allArray = array1.concat(array2);
+// const allArray = array1.concat(array2);
 
-for (const value of allArray){
-    total += value;
-}
-console.log(total)
-
-
+// for (const value of allArray){
+//     total += value;
+// }
+// console.log(total)
 
 
+//////////////////
 
+// const logItems = function(items){
+// for (const item of items){
+//     console.log(item)
+// }
+// }
 
+// logItems([ 'Mango', 'Poly', 'Kiwi', 'Ajax']);
+// logItems([1,2,3,4,5]);
 
+/////////////////////////////////////////////////
 
+// const findSmallesNumber = function(numbers){
+//     let smallestNumber = numbers[0];
+    
+//     for (const number of numbers){
+//         // console.log(number);
+//     if (number < smallestNumber){
+//         smallestNumber = number;
+//     }
+//     }
+//     return smallestNumber
+// }
 
+// console.log(findSmallesNumber([3, 8, 12, -2, 15]));
+// console.log(findSmallesNumber([100, 54, 8, 12, 47]));
 
+/////////////////////////////////////////////////////////////////
+// const slugify = function(string){
+//     return string.toLowerCase().split(' ').join('-');
+// }
 
+// console.log(slugify('Top 10 benefits of React fraemwork'));
+// console.log(slugify('Azure Static Web Apps are Awesome'))
 
+//////////////////////////////////////////////////
 
+// const fn = function(){
+// console.log(arguments)
 
+// const arg = Array.from(arguments)
+// console.log(arg);
 
+// for(const arg of arguments){
+//     console.log(arg)
+// }
+// }
 
+// fn (1,2,3);
+// fn (1,2,3,4,5);
 
+////////////////////////////////////////////////////////////
 
+//  const add = function(...args){
+// console.log(args);
+
+// let total = 0;
+
+// for (const arg of args){
+//     total +=arg
+// }
+// return total;
+//  }
+
+// console.log(add(1,2,3));
+// console.log(add(1,2,3,4,5,6))
+
+///////////////////////////////////////////
+
+// const filterNumbers = function(array,...args){
+//     console.log('array: ',array);
+//     console.log('args: ',args);
+
+//     const uniqueElements = [];
+
+//     for (const element of array){
+//         if (args.includes(element)){
+           
+//             uniqueElements.push(element);
+//             console.log(`${element} есть везде`)
+
+//         }
+//     }
+//     return uniqueElements
+// }
+
+// console.log(filterNumbers([1, 2, 3, 4, 5],10, 15, 20, 4, 1));
+
+////////////////////////////////////////////////////////////////
+
+// function  multiply (a,b){
+//     return a * b;
+// }
+// console.log(multiply(3,3));
+// console.log(multiply(5,5))
+
+////////////////////
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+
+// console.log()
+
+/////////////////////////////
+
+// const bookShelf = {
+//     books: ["The Last Kingdom"],
+//     getBooks() {
+//       return this.books;
+//     },
+//     addBook(bookName) {
+//       this.books.push(bookName);
+//     },
+//     removeBook(bookName) {
+//       const bookIndex = this.books.indexOf(bookName);
+//       this.books.splice(bookIndex, 1);
+//     },
+//   };
+  
+//   console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+//   bookShelf.addBook("The Mist");
+//   bookShelf.addBook("Dream Guardian");
+//   console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'The Mist', 'Dream Guardian']
+//   bookShelf.removeBook("The Mist");
+//   console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'Dream Guardian']
+/////////////////////////////////
+
+// const totalMinutes = 70;
+
+// const hours = Math.floor(totalMinutes / 60);
+// const minutes = totalMinutes % 60;
+// console.log(hours);
+// console.log(minutes);
+// console.log(`${hours}:${minutes}`)
+
+// const doubleDigitHours = String(hours).padStart(2, 0);
+// const doubleDigitMinutes = String(minutes).padStart(2, 0);
+// console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+
+//////////////////////////////////
+
+// function calcBMI({weight, height}) {
+//     const numericWeight = Number(weight.replace(',', '.'));
+//     const numericHeight = Number(height.replace(',', '.'));
+//     return Number((numericWeight / numericHeight ** 2).toFixed(1));
+//   }
+  
+  // Было
+  // console.log(calcBMI('88,3', '1.75'));
+  // console.log(calcBMI('68,3', '1.65'));
+  // console.log(calcBMI('118,3', '1.95'));
+  
+  // Ожидается
+//   console.log(
+//     calcBMI({
+//       weight: '88,3',
+//       height: '1.75',
+//     }),
+//   );
+//   console.log(
+//     calcBMI({
+//       weight: '68,3',
+//       height: '1.65',
+//     }),
+//   );
+//   console.log(
+//     calcBMI({
+//       weight: '118,3',
+//       height: '1.95',
+//     }),
+//   );
+
+//////////////////////////////////////////////////
+
+// function printContactsInfo({names, phones}) {
+//     const nameList = names.split(',');
+//     const phoneList = phones.split(',');
+//     for (let i = 0; i < nameList.length; i += 1) {
+//       console.log(`${nameList[i]}: ${phoneList[i]}`);
+//     }
+//   }
+  
+//   // Было
+//   // printContactsInfo(
+//   //   'Jacob,William,Solomon,Artemis',
+//   //   '89001234567,89001112233,890055566377,890055566300',
+//   // );
+  
+//   // Ожидается
+//   printContactsInfo({
+//     names: 'Jacob,William,Solomon,Artemis',
+//     phones: '89001234567,89001112233,890055566377,890055566300',
+//   });
+
+  /////////////////////////////////////////////
+
+//   function getBotReport({
+//     companyName,
+//     bots: {repair: repairBots,defence: defenceBots},
+// }) {
+//     return `${companyName} has ${repairBots + defenceBots} bots in stock`;
+//   }
+  
+//   // Было
+//   // console.log(getBotReport('Cyberdyne Systems', 150, 50));
+  
+//   // Ожидается
+//   console.log(
+//     getBotReport({
+//       companyName: 'Cyberdyne Systems',
+//       bots: {
+//         repair: 150,
+//         defence: 50,
+//       },
+//     }),
+//   ); // "Cyberdyne Systems has 200 bots in stock"
+
+////////////////////////////////////////////////////////
+
+// Решение
+// function getStockReport({ 
+//     companyName,
+//      stock,
+//     }) {
+//    let total = 0;
+
+//    for (const value of Object.values(stock)){
+//     total+=value
+//    }
+//     return `${companyName} has ${total} items in stock`;
+//   }
+  
+//   console.log(
+//     getStockReport({
+//       companyName: 'Cyberdyne Systems',
+//       stock: {
+//         repairBots: 150,
+//         defenceBots: 50,
+//       },
+//     }),
+//   ); // "Cyberdyne Systems has 200 items in stock"
+  
+//   console.log(
+//     getStockReport({
+//       companyName: 'Belacci',
+//       stock: {
+//         shoes: 20,
+//         skirts: 10,
+//         hats: 5,
+//       },
+//     }),
+//   ); // "Belacci has 35 item in stock"
+
+////////////////////////////////////////////////////
+
+// Дополни функцию createContact(partialContact) так, чтобы она возвращала новый 
+
+// объект контакта с добавленными свойствами id и createdAt, а также list со значением "default" 
+// если в partialContact нет такого свойства.
+
+// Решение
+// function createContact({list = 'default', ...partialContact}) {
+//   return {
+//     id: new Date(),
+//     createdAt: Date.now(),
+//     list,
+//     ...partialContact,
+//   };
+// }
+
+// console.log(
+//   createContact({
+//     name: 'Mango',
+//     email: 'mango@mail.com',
+//     list: 'friends',
+//   }),
+// );
+// console.log(
+//   createContact({
+//     name: 'Poly',
+//     email: 'poly@hotmail.com',
+//   }),
+// );
+
+// function generateId() {
+//   return '_' + Math.random().toString(36).substr(2, 9);
+// }
+
+//////////////////////////////////////////////////////////
+
+// Example 6 - Операция rest
+// Напиши функцию transformUsername(user) так,
+// чтобы она возвращала новый обьект со свойством fullName, вместо firstName и lastName.
+
+// Решение
+// function transformId({ firstName,lastName,...user}) {
+//   return {
+//     fullName: `${firstName} ${lastName}`,
+//     ...user,
+// }
+// }
+
+// console.log(
+//   transformId({
+//     id: 1,
+//     firstName: 'Jacob',
+//     lastName: 'Mercer',
+//     email: 'j.mercer@mail.com',
+//     friendCount: 40,
+//   }),
+// );
+
+// console.log(
+//   transformId({
+//     id: 2,
+//     firstName: 'Adrian',
+//     lastName: 'Cross',
+//     email: 'a.cross@hotmail.com',
+//     friendCount: 20,
+//   }),
+// )
