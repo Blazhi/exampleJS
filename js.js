@@ -124,12 +124,12 @@
 // console.log(message)
 //////////////////////////////////////////////
 
-const max = 100;
-const min = 20;
+// const max = 100;
+// const min = 20;
 
-for (let i = min;i = max; i+=5){
-console.log(i)
-}
+// for (let i = min;i = max; i+=5){
+// console.log(i)
+// }
 
 
 ////////////////////////////////////////////////
@@ -692,6 +692,7 @@ console.log(i)
 
 // console.log('Total:',total);
 ////////////////////////////////////////////////////////////////////////////////////
+
 // const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3mn']
 // const loginToFind = 'poly1scute';
 
@@ -707,6 +708,7 @@ console.log(i)
 
 // console.log(message)
  /////////////////////////////////////////////////////////////////////
+ 
 //  const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3mn']
 
 //  const findLogin = function( allLogins,loginToFind){
