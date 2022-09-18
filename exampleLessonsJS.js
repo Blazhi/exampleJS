@@ -365,13 +365,111 @@
 //     }
 //     }
 // }
-function abbrevName(name){
-  const answer = [name[0]]
-  for(let i = 0; i < name.length; i++) {
-      if(name[i] === " ") {
-          answer.push(name[i + 1]);
-      }
+// function abbrevName(name){
+//   const answer = [name[0]]
+//   for(let i = 0; i < name.length; i++) {
+//       if(name[i] === " ") {
+//           answer.push(name[i + 1]);
+//       }
+//   }
+//   return answer.map(el => el.toUpperCase()).join(".")
+// }
+// console.log(abbrevName(Sam)
+
+/////////////////////////////////
+
+// const changeCase = function(string){
+//       const letters = string.split('');
+//       let invertedString = '';
+//       console.log(letters);
+  
+//       for (const letter of letters){
+//       const isInLowerCase = letter === letter.toLowerCase();
+  
+//       invertedString += isInLowerCase
+//       ? letter.toUpperCase()
+//       : letter.toLowerCase();
+//       }
+  
+//       return invertedString
+//   }
+
+///////////////////////////
+
+// function solution(str){
+//   let reverseStr = " ";
+//   for (let i=str.lenght-1; i>=0; i--){
+//     reverseStr += str[i];    
+//   }
+//   return reverseStr;
+// }
+
+
+// console.log(solution("world"))
+
+////////////////////
+
+
+
+// function sum (numbers) {
+//   "use strict";
+// let total = 0;
+//  for (const number of numbers){
+//   total += number
+// }
+//   return total
+// }
+
+// console.log(sum([1, 5.2, 4, 0, -1]))
+// console.log(sum([]))
+
+///////////////////
+
+// function countPositivesSumNegatives(input) {
+//   // your code here
+//   // if (input = 0 ){
+//   //   return []
+//   // }
+//   if (input == null || input.length < 1){
+//     return [];
+//   }
+//   let total = [0,0]
+  
+//   for (let i = 0; i < input.lenght; i++){
+//     if (input[i] > 0){
+//     total[0] += input[i]
+      
+//     } else if (input[i] < 0){
+//       total[1] += input[i]
+//     }
+//     return total
+//   }
+// }
+
+// console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15],))
+
+/////////////////
+
+// Налаштування
+// const myArray = [];
+
+// // Змініть код лише під цим рядком
+// let i = 0;
+
+// while (i > 5){
+//   ourArray.push(i);
+//   i--;
+// }
+// console.log(myArray)
+
+/////////////////
+
+const arr = [
+  [1, 2], [3, 4], [5, 6]
+];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
   }
-  return answer.map(el => el.toUpperCase()).join(".")
 }
-console.log(abbrevName(Sam, Harris))
