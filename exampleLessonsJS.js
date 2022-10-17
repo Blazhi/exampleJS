@@ -414,9 +414,10 @@
 // function sum (numbers) {
 //   "use strict";
 // let total = 0;
-//  for (const number of numbers){
+
+// numbers.forEach(function (number, index){
 //   total += number
-// }
+// })
 //   return total
 // }
 
@@ -426,10 +427,10 @@
 ///////////////////
 
 // function countPositivesSumNegatives(input) {
-//   // your code here
-//   // if (input = 0 ){
-//   //   return []
-//   // }
+  
+//   if (input = 0 ){
+//     return []
+//   }
 //   if (input == null || input.length < 1){
 //     return [];
 //   }
@@ -464,12 +465,194 @@
 
 /////////////////
 
-const arr = [
-  [1, 2], [3, 4], [5, 6]
-];
+// const arr = [
+//   [1, 2], [3, 4], [5, 6]
+// ];
 
-for (let i = 0; i < arr.length; i++) {
-  for (let j = 0; j < arr[i].length; j++) {
-    console.log(arr[i][j]);
-  }
-}
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length; j++) {
+//     console.log(arr[i][j]);
+//   }
+// }
+/////////////////////////////////////
+// const numbers = [5, 10, 15, 20, 25];
+
+// Классический for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Индекс ${i}, значение ${numbers[i]}`);
+// }
+// numbers.forEach(function (number, index) {
+//   console.log(`Индекс ${index}, значение ${number}`);
+// });
+
+
+// numbers.forEach (function (number, index){
+//   console.log(`${index}:${number}`)
+// })
+
+
+////////////////////
+
+// function sum(x, y, z){
+//   console.log(x + y + z)
+// }
+// sum(2, 3, 2)
+
+////////////////////
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// book.title = "Shikari";
+
+// const books = Object.keys(book)
+// console.log(books)
+
+// const value = Object.values(book)
+// console.log(value)
+
+// console.log(book.title)
+
+////////////////////
+
+// const goods = {
+//   apples: 6,
+//   grapes: 3,
+//   bread: 4,
+//   cheese: 7,
+// };
+
+// const values = Object.values(goods)
+// console.log(values)
+
+// let total = 0;
+
+// // for (const value  of values){
+// //   total += value
+// // }
+// for (let i=0; i < values.length; i+=1){
+// total += values[i]
+// }
+// console.log(total)
+
+///////////////
+
+// const apples = 47;
+// const grapes = 135;
+// const total = apples + grapes ;
+// console.log(total)
+// const diff = grapes - apples ;
+// console.log(diff)
+
+// let students = 100;
+// students += 50
+// console.log(students);
+
+// const companyName = 'Cyberdyne Systems';
+// const repairBots = 150;
+// const defenceBots = 50;
+// const message = `${companyName} has ${repairBots + defenceBots} bots in stock`;
+// console.log(message); // "Cyberdyne Systems has 200 bots in stock"
+
+// const totalMinutes = 70;
+
+// const hours = Math.floor(totalMinutes/60)
+// const minets = totalMinutes % 60
+
+// console.log(`${hours}:${minets}`)
+
+// function time(x){
+//   const hours = Math.floor(x /60)
+//   const minets = x % 60
+
+//   console.log(`${hours}:${minets}`)
+// }
+
+// time(130);
+
+/////////////////
+// const a = 120;
+// const b = 180;
+
+// if (a > 100 && b > 100){
+//   console.log(Math.max(a,b))
+// } else console.log(b + 512)
+
+// a > 100 && b > 100 ? 
+// console.log(Math.max(a,b)) 
+// : console.log(b + 512);
+
+//////////////////////////////////
+
+// const genres = ["Jazz", "Blues"];
+
+// genres.push("Рок-н-ролл")
+
+// const lastElement = genres.length - 1
+
+// console.log(genres)
+// console.log(genres[0])
+// console.log(genres[lastElement])
+
+// const deleteElement = genres.splice(0,1);
+
+// genres.splice(0,0, "Country", "Reggae")
+
+// console.log(genres)
+// console.log(deleteElement)
+
+////////////////////////
+
+// var number=function(array){
+//   //your awesome code here
+//    var newArr =[];
+//   if (array.length == 0) {
+//     return [];
+//   }else{
+//     for(var i=0; i<array.length; i++){
+//       newArr.push ((i + 1) + ':'+ array[i]);
+//     }
+//   }
+//   return newArr
+// }
+
+// console.log( number(["a", "b", "c"]));
+
+////////////////////////
+
+// function calсulateAverage(...args) {
+//   let total = 0;
+//   // for (let i = 0; i < args.length; i++) {
+//   //   total += args[i];
+//   // }
+//   // return total / args.length;
+
+// args.forEach(function (arg, index){
+//   total += arg;
+// })
+// return total / args.length;
+// }
+// console.log(calсulateAverage(1, 2, 3, 4)); // 2.5
+// console.log(calсulateAverage(14, 8, 2)); // 8
+// console.log(calсulateAverage(27, 43, 2, 8, 36)); // 23.2
+
+/////////////////////////
+
+function printContactsInfo({ names, phones }) {
+  const nameList = names.split(',');
+  const phoneList = phones.split(',');
+  // for (let i = 0; i < nameList.length; i += 1) {
+  //   console.log(`${nameList[i]}: ${phoneList[i]}`);
+  // }
+
+  nameList.forEach((name, idx) => 
+  console.log(`${nameList[idx]}: ${phoneList[idx]}`))}
+
+printContactsInfo({
+  names: 'Jacob,William,Solomon,Artemis',
+  phones: '89001234567,89001112233,890055566377,890055566300',
+});
